@@ -721,9 +721,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.onCreatedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetFollowFreeAreaBottom(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaBottom(), eventsFunctionContext);
 }
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.onCreatedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelay(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraDelay());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelay(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraDelay())
 }
 }
 
@@ -815,20 +813,13 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsC
 
 {
 
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1.length;i<l;++i) {
-    if ( !(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsCalledManually()) ) {
-        isConditionTrue_0 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1[i];
-        ++k;
-    }
+{isConditionTrue_0 = !eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsCalledManually();
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1 */
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).DoMoveCameraCloser(eventsFunctionContext);
 }
@@ -934,9 +925,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloser
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloserContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloserContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsCalledManually(true);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsCalledManually(true)
 }
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloserContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).DoMoveCameraCloser(eventsFunctionContext);
@@ -1220,23 +1209,14 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 {
 
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowOnX() ) {
-        isConditionTrue_0 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i];
-        ++k;
-    }
+{isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowOnX();
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1 */
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOldX(gdjs.evtTools.camera.getCameraX(runtimeScene, (gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getLayer()), 0));
-}
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOldX(gdjs.evtTools.camera.getCameraX(runtimeScene, (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0))
 }
 
 { //Subevents
@@ -1248,23 +1228,14 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraClos
 
 {
 
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowOnY() ) {
-        isConditionTrue_0 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i];
-        ++k;
-    }
+{isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowOnY();
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1 */
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOldY(gdjs.evtTools.camera.getCameraY(runtimeScene, (gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[i].getLayer()), 0));
-}
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOldY(gdjs.evtTools.camera.getCameraY(runtimeScene, (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1[0].getLayer()), 0))
 }
 
 { //Subevents
@@ -1371,22 +1342,13 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpCo
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingEnd(gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) + eventsFunctionContext.getArgument("WaitingDuration"));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingEnd(gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) + eventsFunctionContext.getArgument("NewWaitingDuration"))
 }
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingSpeedXMax(eventsFunctionContext.getArgument("NewWaitingSpeedXMax"))
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingSpeedXMax(eventsFunctionContext.getArgument("WaitingSpeedXMax"));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingSpeedYMax(eventsFunctionContext.getArgument("NewWaitingSpeedYMax"))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingSpeedYMax(eventsFunctionContext.getArgument("WaitingSpeedYMax"));
-}
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelayCatchUpDuration(eventsFunctionContext.getArgument("CatchUpDuration"));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelayCatchUpDuration(eventsFunctionContext.getArgument("NewCatchUpDuration"))
 }
 }
 
@@ -1402,7 +1364,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUp = function(WaitingDuration, WaitingSpeedXMax, WaitingSpeedYMax, CatchUpDuration, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUp = function(NewWaitingDuration, NewWaitingSpeedXMax, NewWaitingSpeedYMax, NewCatchUpDuration, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -1461,10 +1423,10 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "WaitingDuration") return WaitingDuration;
-if (argName === "WaitingSpeedXMax") return WaitingSpeedXMax;
-if (argName === "WaitingSpeedYMax") return WaitingSpeedYMax;
-if (argName === "CatchUpDuration") return CatchUpDuration;
+if (argName === "NewWaitingDuration") return NewWaitingDuration;
+if (argName === "NewWaitingSpeedXMax") return NewWaitingSpeedXMax;
+if (argName === "NewWaitingSpeedYMax") return NewWaitingSpeedYMax;
+if (argName === "NewCatchUpDuration") return NewCatchUpDuration;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -1481,8 +1443,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpCo
 return;
 }
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext = {};
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final = [];
-
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3= [];
@@ -1514,9 +1474,7 @@ if (true)
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects3[i].drawPathLineTo((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))), (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))));
 }
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex() + (1));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()+1)
 }
 }
 }
@@ -1552,9 +1510,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1 */
 gdjs.copyArray(eventsFunctionContext.getObjects("ShapePainter"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0)
 }
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects1[i].setOutlineColor("245;166;35");
@@ -1576,92 +1532,44 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext
 
 {
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1.length = 0;
-
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.length = 0;
-let isConditionTrue_1 = false;
+{let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2);
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaLeft() != 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaLeft() != 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2);
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaRight() != 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaRight() != 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2);
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaTop() != 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaTop() != 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2);
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaBottom() != 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFollowFreeAreaBottom() != 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1_1final, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1);
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1 */
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("ShapePainter"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DrawDebugContext.GDShapePainterObjects1[i].setOutlineColor("126;211;33");
@@ -1866,10 +1774,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXCont
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnX(false);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnX(false)
 }
 }
 
@@ -1881,13 +1786,10 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = !!eventsFunctionContext.getArgument("FollowOnX");
+{isConditionTrue_0 = eventsFunctionContext.getArgument("Value");
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnXContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnX(true);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnX(true)
 }
 }
 
@@ -1896,7 +1798,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnX = function(FollowOnX, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnX = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -1955,7 +1857,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "FollowOnX") return FollowOnX;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -1983,10 +1885,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYCont
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnY(false);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnY(false)
 }
 }
 
@@ -1998,13 +1897,10 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = !!eventsFunctionContext.getArgument("FollowOnY");
+{isConditionTrue_0 = eventsFunctionContext.getArgument("Value");
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnYContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnY(true);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowOnY(true)
 }
 }
 
@@ -2013,7 +1909,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnY = function(FollowOnY, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowOnY = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2072,7 +1968,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "FollowOnY") return FollowOnY;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2100,10 +1996,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAre
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaRightContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaRightContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaRightContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaTop(Math.max(0, eventsFunctionContext.getArgument("SetFollowFreeAreaRight")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaRight(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2112,7 +2005,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaRight = function(SetFollowFreeAreaRight, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaRight = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2171,7 +2064,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "SetFollowFreeAreaRight") return SetFollowFreeAreaRight;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2199,10 +2092,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAre
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaLeftContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaLeftContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaLeftContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaTop(Math.max(0, eventsFunctionContext.getArgument("SetFollowFreeAreaLeft")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaLeft(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2211,7 +2101,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaLeft = function(SetFollowFreeAreaLeft, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaLeft = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2270,7 +2160,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "SetFollowFreeAreaLeft") return SetFollowFreeAreaLeft;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2298,10 +2188,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAre
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaTopContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaTopContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaTopContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaTop(Math.max(0, eventsFunctionContext.getArgument("FollowFreeAreaTop")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaTop(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2310,7 +2197,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaTop = function(FollowFreeAreaTop, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaTop = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2369,7 +2256,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "FollowFreeAreaTop") return FollowFreeAreaTop;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2397,10 +2284,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAre
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaBottomContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaBottomContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaBottomContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaBottom(Math.max(0, eventsFunctionContext.getArgument("SetFollowFreeAreaBottom")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFollowFreeAreaBottom(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2409,7 +2293,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaBottom = function(SetFollowFreeAreaBottom, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetFollowFreeAreaBottom = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2468,7 +2352,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "SetFollowFreeAreaBottom") return SetFollowFreeAreaBottom;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2496,10 +2380,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeed
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedMaxContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedMaxContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedMaxContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLeftwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Speed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLeftwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2508,7 +2389,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedMax = function(Speed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedMax = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2567,7 +2448,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Speed") return Speed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2595,10 +2476,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpee
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedMaxContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedMaxContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedMaxContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLeftwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Speed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRightwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2607,7 +2485,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedMax = function(Speed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedMax = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2666,7 +2544,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Speed") return Speed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2694,10 +2572,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedMa
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedMaxContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedMaxContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedMaxContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUpwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Speed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUpwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2706,7 +2581,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedMax = function(Speed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedMax = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2765,7 +2640,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Speed") return Speed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2793,10 +2668,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeed
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedMaxContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedMaxContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedMaxContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDownwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Speed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDownwardSpeedMax(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2805,7 +2677,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedMax = function(Speed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedMax = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2864,7 +2736,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Speed") return Speed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2892,14 +2764,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeed
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLeftwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("LeftwardSpeed")));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLeftwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("Value")))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogLeftwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("LeftwardSpeed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogLeftwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -2908,7 +2775,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeed = function(LeftwardSpeed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetLeftwardSpeed = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -2967,7 +2834,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "LeftwardSpeed") return LeftwardSpeed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -2995,14 +2862,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpee
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRightwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("RightwardSpeed")));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRightwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("Value")))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogRightwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("RightwardSpeed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogRightwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -3011,7 +2873,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeed = function(RightwardSpeed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetRightwardSpeed = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -3070,7 +2932,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "RightwardSpeed") return RightwardSpeed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -3098,14 +2960,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeed
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDownwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("DownwardSpeed")));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDownwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("Value")))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogDownwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("DownwardSpeed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogDownwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -3114,7 +2971,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeed = function(DownwardSpeed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetDownwardSpeed = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -3173,7 +3030,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "DownwardSpeed") return DownwardSpeed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -3201,14 +3058,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedCo
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUpwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("UpwardSpeed")));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUpwardSpeed(gdjs.evtTools.common.clamp(0, 1, eventsFunctionContext.getArgument("Value")))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogUpwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("UpwardSpeed")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLogUpwardSpeed(Math.log(1 - eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -3217,7 +3069,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeed = function(UpwardSpeed, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetUpwardSpeed = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -3276,7 +3128,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "UpwardSpeed") return UpwardSpeed;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -3398,10 +3250,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpCont
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetX(eventsFunctionContext.getArgument("Value"));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetX(eventsFunctionContext.getArgument("Value"))
 }
 }
 
@@ -3506,7 +3355,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetOffsetXOp(eventsFunctionContext.getArgument("CameraOffsetX"), eventsFunctionContext);
+    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetOffsetXOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
 }
@@ -3516,7 +3365,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetX = function(CameraOffsetX, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetX = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -3575,7 +3424,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "CameraOffsetX") return CameraOffsetX;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -3695,19 +3544,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpCont
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetY(eventsFunctionContext.getArgument("Value"));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraOffsetY(eventsFunctionContext.getArgument("Value"))
 }
 }
 
@@ -3797,6 +3636,13 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContex
 
 
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+
+}
+
 
 {
 
@@ -3902,10 +3748,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetForecastTimeC
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetForecastTimeContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetForecastTimeContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetForecastTimeContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastTime(Math.min(0, eventsFunctionContext.getArgument("ForecastTime")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastTime(Math.min(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -3914,7 +3757,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetForecastTime = function(ForecastTime, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetForecastTime = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -3973,7 +3816,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "ForecastTime") return ForecastTime;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -4001,10 +3844,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetCameraDelayCo
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetCameraDelayContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetCameraDelayContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetCameraDelayContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelay(Math.min(0, eventsFunctionContext.getArgument("CameraDelay")));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelay(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
 }
 
@@ -4013,7 +3853,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 };
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetCameraDelay = function(CameraDelay, parentEventsFunctionContext) {
+gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetCameraDelay = function(Value, parentEventsFunctionContext) {
 
 var that = this;
 var runtimeScene = this._runtimeScene;
@@ -4072,7 +3912,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "CameraDelay") return CameraDelay;
+if (argName === "Value") return Value;
     return "";
   },
   getOnceTriggers: function() { return that._onceTriggers; }
@@ -4509,9 +4349,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2 */
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraExtraDelay(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() + (Math.max(0, gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * (1 - Math.min(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWaitingSpeedXMax() * Math.abs((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectX").getChild(1))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectX").getChild(0)))), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWaitingSpeedYMax() * Math.abs((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectY").getChild(1))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectY").getChild(0))))) / ((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(1))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(0))))))));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraExtraDelay(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay()+Math.max(0, gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * (1 - Math.min(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWaitingSpeedXMax() * Math.abs((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectX").getChild(1))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectX").getChild(0)))), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWaitingSpeedYMax() * Math.abs((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectY").getChild(1))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectY").getChild(0))))) / ((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(1))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(0)))))))
 }
 
 { //Subevents
@@ -4534,13 +4372,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPos
 let isConditionTrue_0 = false;
 {
 /* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1 */
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterX(gdjs.evtTools.common.lerp((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectX").getChild(1))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectX").getChild(0))), ((gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) - (gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).CurrentDelay(eventsFunctionContext))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(1)))) / ((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(0))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(1))))));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterX(gdjs.evtTools.common.lerp((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectX").getChild(1))), (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectX").getChild(0))), ((gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) - (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).CurrentDelay(eventsFunctionContext))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(1)))) / ((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(0))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(1))))))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterY(gdjs.evtTools.common.lerp((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectY").getChild(1))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectY").getChild(0))), ((gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) - (gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).CurrentDelay(eventsFunctionContext))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(1)))) / ((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(0))) - (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ObjectTime").getChild(1))))));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterY(gdjs.evtTools.common.lerp((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectY").getChild(1))), (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectY").getChild(0))), ((gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) - (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).CurrentDelay(eventsFunctionContext))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(1)))) / ((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(0))) - (gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getVariables()).get("__SmoothCamera").getChild("ObjectTime").getChild(1))))))
 }
 }
 
@@ -4621,13 +4455,9 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2);
 
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterX((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectX").getChild(0))));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterX((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectX").getChild(0))))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterY((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ObjectY").getChild(0))));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterY((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ObjectY").getChild(0))))
 }
 }
 
@@ -4740,13 +4570,9 @@ if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterX((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getCenterXInScene()));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterX((( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getCenterXInScene()))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterY((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getCenterYInScene()));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDelayedCenterY((( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[0].getCenterYInScene()))
 }
 }
 
@@ -4910,14 +4736,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(10705660);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9454668);
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1 */
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelayCatchUpSpeed(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraDelayCatchUpDuration());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelayCatchUpSpeed(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraDelayCatchUpDuration())
 }
 
 { //Subevents
@@ -4943,20 +4766,11 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() > 0 ) {
-        isConditionTrue_0 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i];
-        ++k;
-    }
+{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() > 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length = k;
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1 */
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraExtraDelay(Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraDelayCatchUpSpeed() * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraExtraDelay(Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraExtraDelay() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCameraDelayCatchUpSpeed() * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)))
 }
 
 { //Subevents
@@ -5245,18 +5059,11 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext
 
 {
 
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext.GDObjectObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext.GDObjectObjects1.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWaitingEnd() > gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) ) {
-        isConditionTrue_0 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext.GDObjectObjects1[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext.GDObjectObjects1[i];
-        ++k;
-    }
+{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getWaitingEnd() > gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene));
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
 }
@@ -5341,8 +5148,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.IsWaitingContext
 return !!eventsFunctionContext.returnValue;
 }
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext = {};
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final = [];
-
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2= [];
 
@@ -5409,56 +5214,30 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHisto
 
 {
 
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1.length = 0;
-
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final.length = 0;
-let isConditionTrue_1 = false;
+{let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2);
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryDuration() > 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryDuration() > 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2);
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastTime() > 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastTime() > 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1_1final, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1);
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1 */
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1[i].valuePush(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryTime"), eventsFunctionContext.getArgument("Time"));
 }
@@ -5559,8 +5338,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHisto
 return;
 }
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext = {};
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final = [];
-
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2= [];
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3= [];
@@ -5577,15 +5354,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecasted
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanX(0);
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanX(0)
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0)
 }
 }
 
@@ -5605,13 +5376,9 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 let isConditionTrue_0 = false;
 if (true)
 {
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanX(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX() + ((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())))));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX()+(gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex() + (1));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()+1)
 }
 }
 }
@@ -5626,9 +5393,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
 
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanX(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX() / ((gdjs.RuntimeObject.getVariableChildCount(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX")))));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX()/(gdjs.RuntimeObject.getVariableChildCount(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryX"))))
 }
 }
 
@@ -5644,15 +5409,9 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanY(0);
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanY(0)
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0)
 }
 }
 
@@ -5672,13 +5431,9 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 let isConditionTrue_0 = false;
 if (true)
 {
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanY(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY() + ((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())))));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY()+(gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex() + (1));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()+1)
 }
 }
 }
@@ -5693,9 +5448,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3);
 
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanY(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY() / ((gdjs.RuntimeObject.getVariableChildCount(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY")))));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryMeanY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY()/(gdjs.RuntimeObject.getVariableChildCount(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryY"))))
 }
 }
 
@@ -5718,7 +5471,8 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 
 let isConditionTrue_0 = false;
 {
-/* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2 */
+gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
+
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ProjectHistoryEnds((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild(0))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild(0))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild((gdjs.RuntimeObject.getVariableChildCount(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX"))) - 1))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild((gdjs.RuntimeObject.getVariableChildCount(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY"))) - 1))), eventsFunctionContext);
 }
@@ -5751,7 +5505,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecasted
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4);
+gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4);
 
 {for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
     gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ProjectHistoryEnds((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild(0))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild(0))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild((gdjs.RuntimeObject.getVariableChildCount(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY"))) - 1))), (gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild((gdjs.RuntimeObject.getVariableChildCount(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX"))) - 1))), eventsFunctionContext);
@@ -5774,19 +5528,11 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestX());
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestX())
 }
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestY())
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestY());
-}
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects4[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())
 }
 }
 
@@ -5798,19 +5544,11 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestX());
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestX())
 }
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestY())
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestY());
-}
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex())
 }
 }
 
@@ -5856,13 +5594,9 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
 
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestX() + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestX() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestX()) * (gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ForecastTimeRatio(eventsFunctionContext)));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestX() + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestX() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestX()) * (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ForecastTimeRatio(eventsFunctionContext)))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestY() + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestY() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestY()) * (gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ForecastTimeRatio(eventsFunctionContext)));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestY() + (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedNewestY() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getProjectedOldestY()) * (( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ForecastTimeRatio(eventsFunctionContext)))
 }
 }
 
@@ -5893,15 +5627,9 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (Math.abs(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceX()) >= Math.abs(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceY()));
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearA(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryCovariance() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceX());
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearA(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryCovariance() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceX())
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearB(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearB(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX())
 }
 
 { //Subevents
@@ -5926,15 +5654,9 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (Math.abs(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceX()) < Math.abs(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceY()));
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearA(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryCovariance() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceY());
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearA(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryCovariance() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceY())
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearB(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryLinearB(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY())
 }
 
 { //Subevents
@@ -5974,23 +5696,13 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecasted
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceX(0);
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceX(0)
 }
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceY(0)
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceY(0);
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryCovariance(0)
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryCovariance(0);
-}
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0);
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(0)
 }
 }
 
@@ -6010,21 +5722,13 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 let isConditionTrue_0 = false;
 if (true)
 {
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceX(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceX() + (Math.pow((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX(), 2)));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceX()+Math.pow((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX(), 2))
 }
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceY()+Math.pow((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY(), 2))
 }
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceY(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryVarianceY() + (Math.pow((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY(), 2)));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryCovariance(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryCovariance()+((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX()) * ((gdjs.RuntimeObject.getVariableNumber(((gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[0].getVariables()).get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY()))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryCovariance(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryCovariance() + (((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryX").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanX()) * ((gdjs.RuntimeObject.getVariableNumber(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getVariables().get("__SmoothCamera").getChild("ForecastHistoryY").getChild(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()))) - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryMeanY())));
-}
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex() + (1));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()+1)
 }
 }
 }
@@ -6052,15 +5756,9 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
-
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterX());
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterX())
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterY());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterY())
 }
 }
 
@@ -6130,14 +5828,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecasted
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterX());
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedX(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterX())
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterY());
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterY())
 }
 }
 
@@ -6161,49 +5854,23 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final.length = 0;
-let isConditionTrue_1 = false;
+{let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
-
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryDuration() > 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryDuration() > 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2);
-
-for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length;i<l;++i) {
-    if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastTime() > 0 ) {
-        isConditionTrue_1 = true;
-        gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[k] = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastTime() > 0);
 }
-gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final.indexOf(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[j]) === -1 )
-            gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final.push(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1_1final, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.GDObjectObjects1);
 }
 }
 }
@@ -6317,14 +5984,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEn
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestX((eventsFunctionContext.getArgument("NewestX") + (eventsFunctionContext.getArgument("NewestY") - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestX((eventsFunctionContext.getArgument("NewestX") + (eventsFunctionContext.getArgument("NewestY") - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestY(eventsFunctionContext.getArgument("NewestY") + (eventsFunctionContext.getArgument("NewestX") * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() - eventsFunctionContext.getArgument("NewestY") + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedNewestY(eventsFunctionContext.getArgument("NewestY") + (eventsFunctionContext.getArgument("NewestX") * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() - eventsFunctionContext.getArgument("NewestY") + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)))
 }
 }
 
@@ -6336,14 +5998,9 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1);
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestX((eventsFunctionContext.getArgument("OldestX") + (eventsFunctionContext.getArgument("OldestY") - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)));
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestX((eventsFunctionContext.getArgument("OldestX") + (eventsFunctionContext.getArgument("OldestY") - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)))
 }
-}
-{for(var i = 0, len = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestY(eventsFunctionContext.getArgument("OldestY") + (eventsFunctionContext.getArgument("OldestX") * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() - eventsFunctionContext.getArgument("OldestY") + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)));
-}
+{eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setProjectedOldestY(eventsFunctionContext.getArgument("OldestY") + (eventsFunctionContext.getArgument("OldestX") * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA() - eventsFunctionContext.getArgument("OldestY") + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearB()) / (1 + Math.pow(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getForecastHistoryLinearA(), 2)))
 }
 }
 

@@ -1,9 +1,9 @@
 {
-  "name": "Wicked Alarm",
-  "short_name": "Wicked Alarm",
-  "id": "com.example.gamename",
+  "name": "3D Road Crosser",
+  "short_name": "3D Road Crosser",
+  "id": "com.example.roadcrosser",
   "description": "",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",
