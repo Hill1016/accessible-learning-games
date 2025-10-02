@@ -5,24 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>可及性學習遊戲平台</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
-    header { background-color: #004080; color: white; padding: 1em; text-align: center; }
-    .game-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; padding: 1em; }
-    .game-card { background: white; border-radius: 8px; padding: 1em; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    @media (max-width: 600px) { .game-card { width: 90%; } }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    main {
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .game-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 1.5em;
+      text-align: center;
+    }
+    .game-card h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .game-card p {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+    .game-card a {
+      display: inline-block;
+      padding: 0.8em 1.2em;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .game-card a:hover {
+      background-color: #005fa3;
+    }
+    @media (max-width: 600px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+      .game-card {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>可及性學習遊戲平台</h1>
-    <p>歡迎使用！請選擇一款遊戲開始學習</p>
+    <p>歡迎使用！這裡提供多款互動式學習遊戲，專為身心障礙者設計</p>
   </header>
-  <main class="game-grid">
-    <div class="game-card">
+
+  <main>
+    <section class="game-card">
       <h2>生活技能遊戲</h2>
       <p>學習日常操作與安全常識</p>
-      <a href="game1/index.html">開始遊戲</a>
-    </div>
+      <a href="game1/index.html" target="_blank" aria-label="開始生活技能遊戲">開始遊戲</a>
+    </section>
+
+    <section class="game-card">
+      <h2>情緒辨識遊戲</h2>
+      <p>認識表情與情緒反應</p>
+      <a href="game2/index.html" target="_blank" aria-label="開始情緒辨識遊戲">開始遊戲</a>
+    </section>
+
+    <section class="game-card">
+      <h2>簡單數學遊戲</h2>
+      <p>練習加減法與數字辨識</p>
+      <a href="game3/index.html" target="_blank" aria-label="開始簡單數學遊戲">開始遊戲</a>
+    </section>
   </main>
 </body>
 </html>
